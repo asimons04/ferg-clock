@@ -13,6 +13,7 @@ Configuration is performed by editing the variables in the script.
 Quiet hours are the start and end times where the chimes should be suppressed.  The hours are defined in 24-hour format.
 
 `QUIET_HOUR_BEGIN` is the hour where the chimes should no longer be played. This is inclusive, so if set to 20, the last chime you will hear will be at 19:45
+
 `QUIET_HOUR_END` is the hour where the chimes should resume playing. This is also inclusive, so if set to 7, the first chime of the day will be at 07:00.
 
 #### Using another player besides aplay
