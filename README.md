@@ -1,5 +1,5 @@
-# Ferg Clock
-A shell script I wrote while very drunk that implements a Westminster chiming clock except it uses Fergalicious instead of the Westminster chimes.
+# Fergminster Clock
+A shell script I wrote while *very* drunk that implements a Westminster chiming clock except it uses Fergalicious instead of the Westminster chimes.
 
 Like a Westminster chiming clock, at the top of the hour, it will chime once for each hour before completing the "chime" with the rest of the verse.  Unlike the config options, the chimes are in 12-hour format, so the most you will hear is 12 chimes.  Additionally, like the clock your grandma probably had, it will do a short chime every 15 minutes.
 
@@ -20,4 +20,20 @@ Quiet hours are the start and end times where the chimes should be suppressed.  
 If you do not or cannot use aplay, you can set another executable to be used by editing the value for `PLAY_CMD`.  This must include any flags or options and must expect the last attribute to be the file that is to be played.  e.g. `$PLAY_CMD /path-to-file.wav`
 
 
+## Example
+```
+3:15 PM:  Fergalicious def...
 
+3:30 PM:  Fergalicious def...
+
+3:40 PM:  Fergalicious def...
+
+4:00 PM:  Fergalicious def...
+	Fergalicious def...
+	Fergalicious def...
+	Fergalicious def...
+	...def def def def def 
+	Fergalicious definition, make the boys go crazy
+	...
+	And can't no other lady put it down like me.
+```
